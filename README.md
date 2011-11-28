@@ -36,7 +36,7 @@ After you have leiningen installed, run
 
 `lein deps`
 
-which will download all dependencies you need to run the Clojure koans.
+in the `clojure-koan` project directory. This will download all dependencies you need to run the Clojure koans.
 
 
 ### Running the Koans
@@ -47,7 +47,7 @@ To run the koans, simply run
 
 `script\run` on Windows
 
-It's an auto-runner, so as you save your files with the correct answers, it will
+The koans use an auto-runner, so as you save your files with the correct answers, it will
 advance you to the next koan or file.
 
 You'll see something like this:
@@ -58,8 +58,8 @@ You'll see something like this:
     We shall contemplate truth by testing reality, via equality.
     (= __ true)
 
-The output is telling you that you have a failing test in equalities.clj.
-So open that file up and make it pass!  In general, you just fill in the
+The output is telling you that you have a failing test in `src/koans/equalities.clj`.
+So open that file up and make the first test pass!  In general, you just fill in the
 blanks to make tests pass.  Sometimes there are several (or even an infinite
 number) of correct answers: any of them will work in these cases.
 
@@ -107,9 +107,9 @@ You can exit the REPL with `CTRL-d` on any OS.
 Patches are encouraged!  Make sure the answer sheet still passes (`script/test`,
 or `script\test` on Windows), and send a pull request.
 
-The file ideaboard.txt has lots of good ideas for new koans to start, or things
+The file `ideaboard.txt` has lots of good ideas for new koans to start, or things
 to add to existing koans.  So write some fun exercises, add your answers to
-`src/path_to_answer_sheet.clj`, and we'll get them in there!
+`resources/koans.clj`, and we'll get them in there!
 
 Feel free to contact me (Colin Jones / trptcolin) on Github or elsewhere if you
 have any questions or want more direction before you start pitching in.
